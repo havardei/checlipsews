@@ -4,7 +4,7 @@ metadata:
 components:
   - name: tools
     container:
-      image: havardei/testvnc:latest
+      image: theasp/novnc:latest
       memoryLimit: 3Gi
       endpoints:
         - exposure: public
