@@ -4,7 +4,7 @@ metadata:
 components:
   - name: test
     container:
-      image: havardei/testvnc:latest
+      image: quay.io/devfile/base-developer-image:ubi9-latest
       memoryLimit: 1G
       endpoints:
         - exposure: public
