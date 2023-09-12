@@ -1,13 +1,17 @@
 schemaVersion: 2.1.0
 metadata:
-  name: no-vnc-test
+  name: spring-petclinic
 components:
-  - name: test
+  - name: tools
     container:
-      image: quay.io/devfile/base-developer-image:ubi9-latest
-      memoryLimit: 1G
+      image: quay.io/devfile/universal-developer-image:ubi8-latest
+      memoryLimit: 3Gi
       endpoints:
+        - exposure: none
+          name: debug
+          protocol: tcp
+          targetPort: 5005
         - exposure: public
-          name: no-vnc
+          name: 8080-tcp
           protocol: http
-          targetPort: 6080
+          targetPort: 8080
