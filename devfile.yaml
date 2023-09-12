@@ -4,7 +4,7 @@ metadata:
 components:
   - name: test
     container:
-      image: havardei/testvnc:2
+      image: havardei/testvnc:latest
       memoryLimit: 1G
       endpoints:
         - exposure: public
