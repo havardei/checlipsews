@@ -8,6 +8,6 @@ components:
       memoryLimit: 3Gi
       endpoints:
         - exposure: public
-          name: 6080-tcp
+          name: 8080-tcp
           protocol: http
-          targetPort: 6080
+          targetPort: 8080
