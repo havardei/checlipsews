@@ -1,13 +1,13 @@
 schemaVersion: 2.1.0
 metadata:
-  name: test
+  name: testvnc
 components:
-  - name: tools
+  - name: testvnc
     container:
-      image: havardei/testvnc:latest
+      image: braughtg/vnc-novnc-base:1.2.1
       memoryLimit: 3Gi
       endpoints:
         - exposure: public
-          name: 6080-tcp
+          name: 6901-tcp
           protocol: http
-          targetPort: 6080
+          targetPort: 6901
