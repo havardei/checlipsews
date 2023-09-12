@@ -1,0 +1,14 @@
+schemaVersion: 2.1.0
+metadata:
+  name: checlipsews
+components:
+  - name: tools
+    container:
+      image: havardei/testvnc:latest
+      memoryLimit: 3Gi
+      endpoints:
+        - exposure: public
+          name: 6080-tcp
+          protocol: http
+          targetPort: 6080
+  
