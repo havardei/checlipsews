@@ -4,10 +4,10 @@ metadata:
 components:
   - name: testvnc
     container:
-      image: braughtg/vnc-novnc-base:1.2.1
+      image: havardei/testvnc:latest
       memoryLimit: 3Gi
       endpoints:
         - exposure: public
-          name: 6901-tcp
+          name: 6080-tcp
           protocol: http
-          targetPort: 6901
+          targetPort: 6080
