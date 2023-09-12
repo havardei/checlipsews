@@ -4,10 +4,10 @@ metadata:
 components:
   - name: tools
     container:
-      image: theasp/novnc:latest
+      image: havardei/testvnc:latest
       memoryLimit: 3Gi
       endpoints:
         - exposure: public
-          name: 8080-tcp
+          name: 6080-tcp
           protocol: http
-          targetPort: 8080
+          targetPort: 6080
