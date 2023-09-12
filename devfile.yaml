@@ -1,14 +1,13 @@
 schemaVersion: 2.1.0
 metadata:
-  name: checlipsews
+  name: no-vnc-test
 components:
-  - name: tools
+  - name: test
     container:
-      image: havardei/testvnc:latest
-      memoryLimit: 3Gi
+      image: lauri3k/it1901-test:1
+      memoryLimit: 1G
       endpoints:
         - exposure: public
-          name: 6080-tcp
+          name: no-vnc
           protocol: http
           targetPort: 6080
-  
