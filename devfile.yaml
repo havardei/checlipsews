@@ -4,10 +4,10 @@ metadata:
 components:
   - name: testvnc
     container:
-      image: havardei/testvnc:latest
+      image: havardei/testvnc:ubuntu
       memoryLimit: 3Gi
       endpoints:
         - exposure: public
           name: 6080-tcp
           protocol: http
-          targetPort: 6080
+          targetPort: 6099
