@@ -4,7 +4,7 @@ metadata:
 components:
   - name: testvnc
     container:
-      image: havardei/testvnc:ubuntu
+      image: havardei/testvnc:latest
       memoryLimit: 3Gi
       endpoints:
         - exposure: public
