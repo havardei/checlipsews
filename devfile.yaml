@@ -9,5 +9,5 @@ components:
       endpoints:
         - exposure: public
           name: 6080-tcp
-          protocol: http
+          protocol: https
           targetPort: 6901
