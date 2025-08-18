@@ -4,5 +4,5 @@ metadata:
 components:
   - name: testvnc
     container:
-      image: quay.io/devfile/universal-developer-image:ubi9-latest
+      image: ubuntu:latest
       memoryLimit: 3Gi
