@@ -6,8 +6,3 @@ components:
     container:
       image: havardei/testvnc:debian
       memoryLimit: 3Gi
-      endpoints:
-        - exposure: public
-          name: 6080-tcp
-          protocol: https
-          targetPort: 6901
