@@ -4,5 +4,5 @@ metadata:
 components:
   - name: testvnc
     container:
-      image: havardei/custom-runner-image:latest
+      image: quay.io/devfile/universal-developer-image:ubi8-latest
       memoryLimit: 3Gi
