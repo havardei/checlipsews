@@ -4,5 +4,5 @@ metadata:
 components:
   - name: testvnc
     container:
-      image: havardei/testvnc:debian
+      image: havardei/custom-runner-image:latest
       memoryLimit: 3Gi
