@@ -10,4 +10,4 @@ components:
         - exposure: public
           name: 6080-tcp
           protocol: https
-          targetPort: 6901
+          targetPort: 6080
