@@ -6,3 +6,8 @@ components:
     container:
       image: havardei/custom-devfile-image:latest
       memoryLimit: 3Gi
+      endpoints:
+        - exposure: public
+          name: 6080-tcp
+          protocol: https
+          targetPort: 6901
